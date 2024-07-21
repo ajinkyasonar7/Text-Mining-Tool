@@ -1,0 +1,44 @@
+Instructions for Running the Python Script
+1. Approach to the Solution
+Data Extraction:
+●	Input Reading:
+●	Read URLs from Input.xlsx.
+●	Place Input.xlsx in C:\\Users\\admin\\Downloads\\.
+●	Place PositiveWords.txt and NegativeWords.txt in the same directory.
+●	Make sure to update your file path in the code accordingly.
+●	Text Extraction:
+●	Fetch webpage content using GET requests.
+●	Parse HTML with BeautifulSoup to extract text within <p> tags.
+●	Saving Extracted Text:
+●	Save the text to files named by URL_ID.
+●	Text Analysis:
+●	Sentiment and Readability Analysis:
+●	Tokenize text into sentences and words.
+●	Calculate sentiment scores using predefined positive and negative word lists.
+●	Perform readability analysis with metrics like average sentence length and Gunning Fog Index.
+●	Loading Word Lists:
+●	Load positive and negative words from local files, excluding common stop words.
+●	Storing Results:
+●	Save computed metrics to output.xlsx.
+●	Text files for each URL will be created in the working directory.
+●	output.xlsx with metrics will be generated.
+
+2. How to Run the python script?
+Prerequisites:
+●	Python 3.12 installed.
+●	Use VS code to open the file 
+●	Import Required libraries: pandas, requests, beautifulsoup4, nltk, textblob, and openpyxl.
+●	Use pip command for downloading the libraries to successfully import libraries.
+●	In the terminal run the python file (main.py), type the following : python main.py	
+
+3. Dependencies Required
+●	pandas: For reading the input Excel file and creating the output Excel file.
+●	requests: For sending HTTP requests to fetch webpage content.
+●	BeautifulSoup (bs4): For parsing HTML and extracting text.
+●	nltk: For text tokenization and stop words.
+●	textblob: For additional text processing (although not explicitly used in the given script).
+●	openpyxl: For reading from and writing to Excel files.
+
+Author: Ajinkya Sonar
+Contact: ajinkyasonar100@gmail.com
+
